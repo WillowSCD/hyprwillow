@@ -3,6 +3,12 @@ MenuBar=Disabled
 [$Version]
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
 
+[CompactMode]
+PreviewSize=96
+
+[DetailsMode]
+PreviewSize=64
+
 [General]
 ShowSelectionToggle=false
 ShowStatusBar=false
@@ -11,7 +17,7 @@ ViewPropsTimestamp=2023,4,26,16,58,48.324
 
 [IconsMode]
 MaximumTextLines=1
-PreviewSize=112
+PreviewSize=96
 
 [InformationPanel]
 dateFormat=ShortFormat
@@ -31,11 +37,15 @@ ToolBarsMovable=Disabled
 IconSize=16
 ToolButtonStyle=IconOnly
 
+[Notification Messages]
+warnAboutRisksBeforeActingAsAdmin=false
+
 [PlacesPanel]
 IconSize=16
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,gdk-pixbuf-thumbnailer,gsthumbnail,svgthumbnail,ffmpegthumbs,gsf-office
 
 [Toolbar mainToolBar]
+IconSize=16
 ToolButtonStyle=IconOnly

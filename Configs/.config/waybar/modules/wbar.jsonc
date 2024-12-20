@@ -1,10 +1,10 @@
     "custom/wbar": {
         "format": "{}", //    //
         "rotate": ${r_deg},
-        "exec": "echo ; echo  switch bar //  dock",
-        "on-click": "wbarconfgen.sh n",
-        "on-click-right": "wbarconfgen.sh p",
-        "on-click-middle": "sleep 0.1 && quickapps.sh kitty firefox spotify code dolphin",
+        "exec": "echo ; echo  apps //  windows",
+        "on-click": "rofilaunch.sh d",
+        "on-click-right": "rofilaunch.sh f",
+        "on-click-middle": "rofilaunch.sh w",
         "interval" : 86400,
         "tooltip": true
     },

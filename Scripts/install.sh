@@ -126,12 +126,13 @@ EOF
     fi
 
     if ! chk_list "myShell" "${shlList[@]}"; then
-        echo -e "Select shell:\n[1] zsh\n[2] fish"
+        echo -e "Select shell:\n[1] bash \n[2] zsh\n[3] fish"
         prompt_timer 120 "Enter option number"
 
         case "${promptIn}" in
-            1) export myShell="zsh" ;;
-            2) export myShell="fish" ;;
+            1) export myShell="bash" ;;
+            2) export myShell="zsh" ;;
+            3) export myShell="fish" ;;
             *) echo -e "...Invalid option selected..." ; exit 1 ;;
         esac
         echo "${myShell}" >> "${scrDir}/install_pkg.lst"
@@ -185,7 +186,7 @@ if [ ${flg_Install} -eq 1 ] && [ ${flg_Restore} -eq 1 ]; then
 
              _      _         _       _ _
  ___ ___ ___| |_   |_|___ ___| |_ ___| | |
-| . | . |_ -|  _|  | |   |_ -|  _| .'| | |
+| . | . |_ -|  _|  | |   |_ -|  _| . | | |
 |  _|___|___|_|    |_|_|_|___|_| |__,|_|_|
 |_|
 
